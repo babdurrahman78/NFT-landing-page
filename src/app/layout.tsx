@@ -1,8 +1,24 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Poppins } from 'next/font/google'
+import localFont from 'next/font/local'
 
 const poppins = Poppins({ weight: ['400', '600'], subsets: ['latin'] })
+const clashDisplay = localFont({
+  src: [
+    {
+      path: './../../public/fonts/ClashDisplay-Medium.otf',
+      weight: '500',
+      style: 'normal',
+    },
+    {
+      path: './../../public/fonts/ClashDisplay-SemiBold.otf',
+      weight: '600',
+      style: 'normal',
+    }, 
+  ],
+  variable: '--font-clash-display'
+})
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -16,7 +32,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${poppins.className} text-white bg-black px-20 py-10`}>{children}</body>
+      <body className={`${poppins.className} ${clashDisplay.variable} text-white bg-black py-10`}>{children}</body>
     </html>
   )
 }
