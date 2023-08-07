@@ -21,8 +21,7 @@ const Navbar = () => {
                 <a className="font-semibold" href="">Create</a>
             </li>
             <li className="col-span-2">
-            <button className="bg-[#2F80ED] font-semibold rounded-full px-5 py-3">Connect Wallet</button>
-                
+                <button className="bg-[#2F80ED] font-semibold rounded-full px-5 py-3">Connect Wallet</button>   
             </li>
         </ul>
 
