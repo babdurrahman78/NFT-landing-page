@@ -1,7 +1,7 @@
-import Image from "next/image"
+import { Wrapper } from "./layout/Wrapper"
 
 const Hero = () => {
-    return (<div className="grid items-center grid-cols-12 mt-[118.48px]">
+    return (<Wrapper>
         {/* Text */}
         <div className="col-span-5 col-start-2 pt-[59px]">
             <p className="font-clash-display tracking-[2.175px] font-medium text-[87px] leading-[78.5px]">
@@ -39,10 +39,12 @@ const Hero = () => {
                     <p className="text-base">Community</p>
                 </div>
             </div>
-
         </div>
 
-    </div>)
+        {/* MONYET */}
+
+
+    </Wrapper>)
 }
 
 export default Hero

@@ -15,7 +15,7 @@ const clashDisplay = localFont({
       path: './../../public/fonts/ClashDisplay-SemiBold.otf',
       weight: '600',
       style: 'normal',
-    }, 
+    },
   ],
   variable: '--font-clash-display'
 })
@@ -32,7 +32,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${poppins.className} ${clashDisplay.variable} text-white bg-black py-10`}>{children}</body>
+      <body className={`${poppins.className} ${clashDisplay.variable} text-white bg-black py-10`}>
+        <div className='max-w-[1728px] mx-auto grid grid-cols-12'>
+          <div className='col-span-10 col-start-2'>{children}</div>
+        </div>
+      </body>
     </html>
   )
 }
