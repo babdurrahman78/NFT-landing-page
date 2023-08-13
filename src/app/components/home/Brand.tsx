@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { Wrapper } from "./layout/Wrapper"
+import { Wrapper } from "../layout/Wrapper"
 
 const Brand = () => {
     return (

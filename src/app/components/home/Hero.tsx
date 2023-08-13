@@ -1,4 +1,4 @@
-import { Wrapper } from "./layout/Wrapper"
+import { Wrapper } from "../layout/Wrapper"
 
 const Hero = () => {
     return (<Wrapper>

@@ -1,16 +1,16 @@
 import Image from "next/image"
-import { Wrapper } from "./layout/Wrapper"
+import { Wrapper } from "./Wrapper"
 
 const Navbar = () => {
     return (<Wrapper>
         {/* Logo */}
-        <div className="flex items-center space-x-2 min-[1000px]:col-span-4">
+        <div className="flex items-center space-x-2 min-[1000px]:col-span-4 min-[700px]:col-span-3">
             <Image src="/ENDFT.png" alt="ENDFT logo" width={50} height={50} />
             <p className="text-2xl font-semibold">ENDFT</p>
         </div>
 
         {/* Menu list */}
-        <ul className="flex items-center justify-between col-span-8">
+        <ul className="flex items-center justify-between min-[1000px]:col-span-8 min-[700px]:col-span-9">
             <li className="">
                 <a className="font-semibold" href="">Market Place</a>
             </li>
