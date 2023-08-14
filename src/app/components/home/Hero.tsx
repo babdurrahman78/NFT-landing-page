@@ -1,9 +1,10 @@
+import Image from "next/image"
 import { Wrapper } from "../layout/Wrapper"
 
 const Hero = () => {
     return (<Wrapper>
         {/* Text */}
-        <div className="col-span-5  pt-[59px]">
+        <div className="col-span-6 pt-[59px]">
             <p className="font-clash-display tracking-[2.175px] font-medium text-[87px] leading-[78.5px]">
                 Discover Collect, & Sell <span className="font-semibold gradient">Extraordinary</span> NFTs
             </p>
@@ -42,6 +43,9 @@ const Hero = () => {
         </div>
 
         {/* MONYET */}
+        <div className="col-span-6">
+            <Image src={"/images/monyet.png"} alt="monyet" width={724} height={804} />
+        </div>
 
 
     </Wrapper>)
