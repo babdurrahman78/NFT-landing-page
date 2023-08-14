@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 import { Poppins } from 'next/font/google'
 import localFont from 'next/font/local'
 import Navbar from './components/layout/Navbar'
+import Footer from './components/layout/Footer'
 
 const poppins = Poppins({ weight: ['400', '600'], subsets: ['latin'] })
 const clashDisplay = localFont({
@@ -33,13 +34,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${poppins.className} ${clashDisplay.variable} text-white bg-black py-10`}>
+      <body className={`${poppins.className} ${clashDisplay.variable} text-white bg-black pt-10`}>
         <div className='max-w-[1728px] mx-auto grid grid-cols-12'>
           <div className='col-span-10 col-start-2'>
             <Navbar />
             {children}
           </div>
         </div>
+        <Footer />
       </body>
     </html>
   )

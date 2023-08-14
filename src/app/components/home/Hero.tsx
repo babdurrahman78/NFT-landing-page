@@ -1,5 +1,6 @@
 import Image from "next/image"
 import { Wrapper } from "../layout/Wrapper"
+import Button from "../common/Button"
 
 const Hero = () => {
     return (<Wrapper>
@@ -14,8 +15,8 @@ const Hero = () => {
             </p>
 
             <div className="flex mt-[67px] space-x-[26px]">
-                <button className="bg-[#2F80ED] font-semibold rounded-[60px] py-[15px] px-[55px] col-span-1 text-[24px]">Explore</button>
-                <button className="border-white border font-semibold rounded-[60px] py-[15px] px-[55px] col-span-1 text-[24px]">Create</button>
+                <Button variant="primary" className="py-[15px] px-[55px] col-span-1 text-[24px]">Explore</Button>
+                <Button variant="light" className="py-[15px] px-[55px] col-span-1 text-[24px]">Create</Button>
             </div>
 
             <div className="flex mt-[67px] space-x-[43px]">

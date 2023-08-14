@@ -26,6 +26,10 @@ body {
     rgb(var(--background-start-rgb)); */
 }
 
+input:focus, textarea:focus{
+  outline: none;
+}
+
 .gradient {
   background: var(--gradient-3, linear-gradient(90deg, #69EACB 0%, #EACCF8 48.00%, #6654F1 100%));
   background-clip: text;

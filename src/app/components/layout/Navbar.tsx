@@ -1,11 +1,12 @@
 import Image from "next/image"
 import { Wrapper } from "./Wrapper"
+import Button from "../common/Button"
 
 const Navbar = () => {
     return (<Wrapper>
         {/* Logo */}
         <div className="flex items-center space-x-2 min-[1000px]:col-span-4 min-[700px]:col-span-3">
-            <Image src="/ENDFT.png" alt="ENDFT logo" width={50} height={50} />
+            <Image src="/images/ENDFT.png" alt="ENDFT logo" width={50} height={50} />
             <p className="text-2xl font-semibold">ENDFT</p>
         </div>
 
@@ -22,7 +23,7 @@ const Navbar = () => {
                 <a className="font-semibold" href="">Create</a>
             </li>
             <li className="col-span-2">
-                <button className="bg-[#2F80ED] font-semibold rounded-full px-5 py-3">Connect Wallet</button>
+                <Button variant="primary">Connect Wallet</Button>
             </li>
         </ul>
 
