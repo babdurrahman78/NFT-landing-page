@@ -7,6 +7,5 @@ export default function Page() {
             <Hero />
             <Brand />
         </div>
-
     )
 }

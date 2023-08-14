@@ -7,7 +7,7 @@ interface IButtonProps {
 }
 
 const Button = ({variant = 'primary', children, className}: IButtonProps) => {
-    return <button className={`${variant == "primary" && 'bg-[#2F80ED]'} ${variant == "light" && 'border-white'} font-semibold rounded-full px-5 py-3 ${className}`}>{children}</button>
+    return <button className={`${variant == "primary" && 'bg-[#2F80ED]'} ${variant == "light" && 'border-white border'} font-semibold rounded-full px-5 py-3 ${className}`}>{children}</button>
 }
 
 export default Button

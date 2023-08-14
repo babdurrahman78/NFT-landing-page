@@ -30,6 +30,16 @@ input:focus, textarea:focus{
   outline: none;
 }
 
+.no-scrollbar::-webkit-scrollbar {
+          display: none;
+      }
+
+      /* Hide scrollbar for IE, Edge and Firefox */
+      .no-scrollbar {
+          -ms-overflow-style: none;  /* IE and Edge */
+          scrollbar-width: none;  /* Firefox */
+      }
+
 .gradient {
   background: var(--gradient-3, linear-gradient(90deg, #69EACB 0%, #EACCF8 48.00%, #6654F1 100%));
   background-clip: text;
