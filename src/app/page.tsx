@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div>
       <Hero />
-      <Brand />
+          <Brand />
     </div>
 
   )
