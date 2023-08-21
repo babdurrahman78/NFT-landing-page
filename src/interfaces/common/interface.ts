@@ -1,6 +1,12 @@
 export interface INFTProps {
   id: number;
-  name: string;
-  userName: string;
+  title: string;
+  description?: string;
+  creator: string;
+  owner?: string;
+  imgUrl: string;
+  tags?: string[];
   price: number;
+  listedDate: string;
+  soldDate?: string;
 }
